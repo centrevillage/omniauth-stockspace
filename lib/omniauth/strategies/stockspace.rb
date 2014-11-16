@@ -9,7 +9,8 @@ module OmniAuth
       option :client_options, {
         :site => 'http://localhost:3001',
         :authorize_path => '/oauth/authorize',
-        :access_token_path => '/oauth/token'
+        :access_token_path => '/oauth/revoke',
+        :request_token_path => '/oauth/token'
       }
 
       uid { raw_info['_id'] }
