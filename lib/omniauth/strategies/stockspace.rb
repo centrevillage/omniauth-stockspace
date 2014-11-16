@@ -7,7 +7,7 @@ module OmniAuth
       option :name, 'stockspace'
 
       option :client_options, {
-        :site => 'https://www.stockspace.net',
+        :site => 'http://localhost:3001',
         :authorize_path => '/oauth/authorize',
         :access_token_path => '/oauth/token'
       }
